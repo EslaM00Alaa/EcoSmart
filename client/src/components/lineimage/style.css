@@ -1,0 +1,30 @@
+@keyframes marquee {
+    0% {
+      transform: translateX(0); /* البداية */
+    }
+    100% {
+      transform: translateX(-50%); /* نهاية الحركة عند منتصف العناصر */
+    }
+  }
+  
+  /* الحاوية الخارجية التي تخفي الفائض */
+  .overflow-hidden {
+    overflow: hidden; /* إخفاء أي عناصر تتجاوز العرض */
+    width: 100%; /* العرض الكامل للشاشة */
+  }
+  
+  /* الشريط المتحرك */
+  .animate-marquee {
+    display: flex; /* ترتيب العناصر أفقياً */
+    animation: marquee 20s linear infinite; /* حركة مستمرة لا نهائية */
+  }
+  
+  .animate-marquee > * {
+    flex-shrink: 0; /* منع تقليص حجم العناصر */
+  }
+  
+  .double-content {
+    display: flex;
+    width: 200%; /* نكرر العناصر لضمان عدم وجود توقف */
+  }
+  

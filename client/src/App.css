@@ -1,0 +1,11 @@
+#root {
+  text-align: center;
+  background-color: #eee;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  padding: 0 !important;
+}

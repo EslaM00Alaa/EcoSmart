@@ -1,0 +1,60 @@
+/* Custom Tailwind Config or External CSS */
+.text-active {
+    color: #17d1c6;
+  }
+  
+  .border-active {
+    border-bottom: 2px solid #17d1c6;
+  }
+  
+  .hover\:text-hover:hover {
+    color: #17d1c6;
+  }
+  
+  .hover\:border-hover:hover {
+    border-bottom: 2px solid #17d1c6;
+  }
+  
+  span {
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+
+
+
+  
+  /* Hide spans on small screens and show the icon */
+  @media (max-width: 768px) {
+    .menu-items {
+      display: none; /* Hide menu spans on small screens */
+    }
+  
+    .icon-menu {
+      display: block; /* Show icon on small screens */
+    }
+  }
+  
+  /* Show spans on large screens and hide the icon */
+  @media (min-width: 769px) {
+    .menu-items {
+      display: flex; /* Show menu spans on larger screens */
+    }
+  
+    .icon-menu {
+      display: none; /* Hide icon on larger screens */
+    }
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .mobile-menu a:hover {
+    color: #f0f0f0;
+  }
+  
+  .icon-menu, .close-menu {
+    cursor: pointer;
+  }
+  

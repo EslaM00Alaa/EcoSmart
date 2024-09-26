@@ -1,0 +1,92 @@
+
+body {
+  background-color: #eee;
+  transition: all;
+  width: 100%;
+  padding: 0;
+}
+
+.bgeee
+{
+  background-color: #eee;
+}
+
+@keyframes upAndDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.upAndDown {
+  animation: upAndDown 3s ease-in-out infinite;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.Landing ,.bgblue{
+  background-color:#0a152f; 
+}
+.bgLightblue {
+  background-color: #17d1c6;
+  color: #0a152f;
+}
+
+.lightblue {
+ color: #17d1c6; 
+}
+
+
+
+
+.bgGray {
+  background-color: #d8d8d8;
+}
+
+.footer {
+  color: white;
+  background-color: #0a152f;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.fancy1 {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
+}
+
+.box {
+  background-color: rgba(70, 24, 24, 0.774);
+}
+
+.input {
+   border: none;
+   border-bottom: 3px solid #d8d8d8;
+   padding-bottom: 12px; 
+}
+.input::placeholder {
+  color: #aaaaaa;
+}
