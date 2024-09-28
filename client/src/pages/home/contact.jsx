@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion } from "framer-motion";
 import { fadeIn } from '../../variants';
 import { MdMarkEmailUnread } from "react-icons/md";
@@ -19,6 +19,12 @@ const Contact = () => {
  
     const HandelSendMessage = async() =>{
     
+      if (!name || !email || !phone || !add || !message) {
+        toast.error("Must fill all input fields");
+        return;
+      }
+      
+
      let flag = await sendMessage(name,email,phone,`${add}    ${add2}`,message)
         setname("")
         setemail("")
@@ -159,14 +165,14 @@ const Contact = () => {
             skicka ett meddelande
             </h3>
           
-            <input value={name} onChange={(e)=>setname(e.target.value)} type="text" placeholder='Namn' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12' />
+            <input value={name} onChange={(e)=>setname(e.target.value)} type="text" placeholder='Namn *' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12' />
             
-            <input value={email} onChange={(e)=>setemail(e.target.value)} type="text" placeholder='E-postadress' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 mt-10' />
-            <input value={phone} onChange={(e)=>setPhone(e.target.value)} type="text" placeholder='telefonnummer' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 mt-10' />
-            <input value={add} onChange={(e)=>setAdd(e.target.value)} type="text" placeholder='adressen' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 mt-10' />
+            <input value={email} onChange={(e)=>setemail(e.target.value)} type="text" placeholder='E-postadress *' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 mt-10' />
+            <input value={phone} onChange={(e)=>setPhone(e.target.value)} type="text" placeholder='telefonnummer *' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 mt-10' />
+            <input value={add} onChange={(e)=>setAdd(e.target.value)} type="text" placeholder='adressen *' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 mt-10' />
             <input value={add2} onChange={(e)=>setAdd2(e.target.value)} type="text"  className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 ' />
            
-            <textarea value={message} onChange={(e)=>setmessage(e.target.value)} placeholder='Meddelande' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 my-10' name="input" ></textarea>
+            <textarea value={message} onChange={(e)=>setmessage(e.target.value)} placeholder='Meddelande *' className='input text-gray-500 text-start text-xl lg:text-2xl focus:outline-none placeholder:text-gray-500 w-11/12 my-10' name="input" ></textarea>
 
            
            <div className='w-full flex justify-end'>
