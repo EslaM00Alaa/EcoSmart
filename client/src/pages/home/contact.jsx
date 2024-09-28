@@ -31,6 +31,7 @@ const Contact = () => {
         setmessage("")
         setPhone("")
         setAdd("")
+        setAdd2("")
         if(flag)
         toast.success("meddelande har skickats");
     }
