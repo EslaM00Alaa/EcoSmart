@@ -119,7 +119,7 @@ const Products = () => {
              initial="hidden"
              whileInView={"show"}
              viewport={{ once: true }}
-            className='text-5xl text-start'>Kostnad: <span className='font-bold lightblue '>2299 kr</span> per burk 25 kg.</motion.h1>
+            className='text-4xl lg:text-5xl text-start'>Kostnad: <span className='font-bold lightblue '>2299 kr</span> per burk 25 kg.</motion.h1>
             
             <motion.a
              href="#4"
@@ -275,7 +275,7 @@ const Products = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-    className='text-5xl text-start'>Kostnad: <span className='font-bold lightblue '>799  kr</span> per fem liter förpackning.</motion.h1>
+    className='text-4xl lg:text-5xl text-start'>Kostnad: <span className='font-bold lightblue '>799  kr</span> per fem liter förpackning.</motion.h1>
     
      <motion.a
              href="#4"

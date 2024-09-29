@@ -4,7 +4,7 @@ import { fadeIn } from '../../variants';
 import { MdMarkEmailUnread } from "react-icons/md";
 import { ImFacebook } from "react-icons/im";
 import { FaInstagram } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaTiktok } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { sendMessage } from '../../apis/sendemail';
@@ -121,7 +121,7 @@ const Contact = () => {
                 <div className='flex '>
                     <motion.a
                        target='_blank'
-                       href='https://web.facebook.com/wix?_rdc=1&_rdr'
+                       href='https://www.facebook.com/profile.php?id=61566492813762&mibextid=ZbWKwL'
                        variants={fadeIn("up", 1)}
                        initial="hidden"
                        whileInView={"show"}
@@ -131,23 +131,23 @@ const Contact = () => {
                     </motion.a>
                     <motion.a
                      target='_blank'
-                     href='https://www.linkedin.com/company/wix-com/'
+                     href='https://www.instagram.com/ecosmart57/'
                      variants={fadeIn("up", 1.2)}
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: true }}
                     className='p-3 bgGray w-fit rounded-full m-2 text-xl'>
-                        <FaLinkedinIn/>
+                       <FaInstagram/>
                     </motion.a>
                     <motion.a
                       target='_blank'
-                     href='https://www.instagram.com/wix/'
+                     href='https://www.tiktok.com/@eco.smart3?_t=8q8AXJdgYtj&_r=1'
                      variants={fadeIn("up", 1.4)}
                      initial="hidden"
                      whileInView={"show"}
                      viewport={{ once: true }}
                     className='p-3 bgGray w-fit rounded-full m-2 text-xl'>
-                        <FaInstagram/>
+                        <FaTiktok/>
                     </motion.a>
                    
                 </div>
