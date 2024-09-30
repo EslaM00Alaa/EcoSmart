@@ -98,7 +98,7 @@ const Contact = () => {
 
                 <div className='flex flex-col items-start'>
                  <h4 className='text-xl mb-0 font-semibold'>E-post</h4>
-                 <h5 className='text-lg text-gray-500 font-medium'>info@ecosmart.com</h5>
+                 <h5 className='text-lg text-gray-500 font-medium'>ecosmartbygg1@gmail.com</h5>
                 </div>
             </motion.div>
 
