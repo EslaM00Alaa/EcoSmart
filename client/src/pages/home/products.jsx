@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { fadeIn } from '../../variants';
 
 import waterprof from "../../images/waterprrofw.png"
+import waterprof2 from "../../images/img1.jpg"
 import mbp from "../../images/MB.png"
+import mbp2 from "../../images/img2.jpg"
 
 const Products = () => {
   return (
@@ -95,8 +97,9 @@ const Products = () => {
              initial="hidden"
              whileInView={"show"}
              viewport={{ once: true }}
-           className='rounded-xl  flex justify-center items-center relative w-10/12 mx-auto mt-10 lg:my-0 lg:w-3/12 bgGray h-96 '>
+           className='rounded-xl  flex justify-center items-center flex-col lg:flex-row relative w-10/12 mx-auto mt-10 lg:my-0 lg:w-3/12  h-96 '>
             <img className='w-full ' src={waterprof} alt="" />
+            <img className='w-full ' src={waterprof2} alt="" />
         </motion.div>
         
       
@@ -252,8 +255,9 @@ const Products = () => {
   initial="hidden"
   whileInView={"show"}
   viewport={{ once: true }}
-  className='rounded-xl  flex justify-center items-center relative w-10/12 mx-auto mt-10 lg:my-0 lg:w-3/12 bgGray h-96 '>
-    <img className='w-full  ' src={mbp} alt="" />
+  className='rounded-xl  flex justify-center items-center flex-col lg:flex-row relative w-10/12 mx-auto mt-10 lg:my-0 lg:w-3/12  h-96 '>
+  <img className='w-full ' src={mbp} alt="" />
+  <img className='w-full ' src={mbp2} alt="" />
 </motion.div>
 
 
