@@ -109,7 +109,7 @@ const Products = () => {
 
     <div className='flex flex-col lg:flex-row  justify-between items-center'>
         <div className='w-11/12 mx-auto lg:w-8/12'>
-            <motion.h2
+            {/* <motion.h2
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
@@ -122,7 +122,7 @@ const Products = () => {
              initial="hidden"
              whileInView={"show"}
              viewport={{ once: true }}
-            className='text-4xl lg:text-5xl text-start'>Kostnad: <span className='font-bold lightblue '>2299 kr</span> per burk 25 kg.</motion.h1>
+            className='text-4xl lg:text-5xl text-start'> per burk 25 kg.</motion.h1> */}
             
             <motion.a
              href="#4"
@@ -266,7 +266,7 @@ const Products = () => {
 
 <div className='flex flex-col lg:flex-row  justify-between items-center'>
 <div className='w-11/12 mx-auto lg:w-8/12'>
-    <motion.h2
+    {/* <motion.h2
       variants={fadeIn("right", 0.5)}
       initial="hidden"
       whileInView={"show"}
@@ -279,7 +279,7 @@ const Products = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true }}
-    className='text-4xl lg:text-5xl text-start'>Kostnad: <span className='font-bold lightblue '>799  kr</span> per fem liter förpackning.</motion.h1>
+    className='text-4xl lg:text-5xl text-start'> per fem liter förpackning.</motion.h1> */}
     
      <motion.a
              href="#4"
